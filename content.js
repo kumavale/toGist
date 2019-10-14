@@ -17,23 +17,22 @@ window.onload = function() {
     }
 
     // Not yet sign in
-    let bb = document.querySelectorAll(".border-bottom");
-    for(let i = 0, j = bb.length; i < j; ++i) {
-        if(bb[i].innerText == "Pricing ") {
+    let mrlg3 = document.querySelectorAll(".mr-lg-3");
+    for(let i = 0, j = mrlg3.length; i < j; ++i) {
+        if(mrlg3[i].innerText == "Pricing ") {
             let a    = document.createElement('a');
             let li   = document.createElement("li");
             let user = location.pathname.split('/')[1];
 
-            li.className = "border-bottom border-lg-bottom-0 mr-0 mr-lg-3";
+            li.className = "mr-0 mr-3 mr-lg-3";
             a.innerHTML  = "Gist";
             a.href       = "https://gist.github.com/" + user;
             a.className  = "HeaderMenu-link no-underline py-3 d-block d-lg-inline-block";
             li.appendChild(a);
-            bb[i].parentNode.insertBefore(li, bb[i].nextElementSibling);
+            mrlg3[i].parentNode.insertBefore(li, mrlg3[i].nextElementSibling);
 
             break;
         }
     }
-
 };
 
