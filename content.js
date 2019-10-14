@@ -1,5 +1,6 @@
 
 window.onload = function() {
+    // Already sign in
     let cls = document.querySelectorAll(".Header-link");
     for(let i = 0, j = cls.length; i < j; ++i) {
         if(cls[i].innerText == "Explore") {
@@ -15,6 +16,7 @@ window.onload = function() {
         }
     }
 
+    // Not yet sign in
     let bb = document.querySelectorAll(".border-bottom");
     for(let i = 0, j = bb.length; i < j; ++i) {
         if(bb[i].innerText == "Pricing ") {
